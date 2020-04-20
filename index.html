@@ -1,0 +1,175 @@
+
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <title>Tu Curriculum Vitae Ya</title>
+<link rel="stylesheet" href="css/bootstrap.min.css" > 
+<link rel="stylesheet" href="css/style.css" >
+<script src="js/jquery-3.2.1.min.js"></script> 
+    
+</head>
+     
+<body>  
+   
+<div class="container mt-3  " id="conta">
+      <!-------- --botones--- ------------> 
+    <div class="text-center">
+          <div class="redondo ml-4" id="redondo"  >aaa</div>   
+          <div class="redondo ml-4" id="redondo2"  >aaa</div>   
+          <div class="redondo ml-4" id="redondo3"  >aaa</div> 
+          <div class="redondo ml-4" id="redondo4"  >aaa</div> 
+   <div class="redondo ml-4" id="redondo5"  >aaa</div> 
+    <div class="redondo ml-4" id="redondo6"  >aaa</div> 
+  
+    </div>
+  
+       <!---redondo5----- --fin botones--- ------------> 
+    
+    <!-------- --Datos--- ------------> 
+     <div class="row mt-3  " id="fondo">
+         
+          <div class="col-sm-12  col-lg-4 my-4 " >
+            
+              <div class="deco2 " id="tarje" >
+                    <h5 id="nombres" class="text-center"></h5>
+                    <img src="img/p1.jpg" alt="" class="mb-3 ima2" id="imagen">
+
+                    <button  onclick="names()" id="boton1">Ingresar datos  </button> 
+
+                    <div class="datos">
+                       <p class="titudatos">Direccion: </p> 
+                       <p id="dire"></p>
+                    </div>
+                    <div class="datos">
+                       <p class="titudatos">Telefono: </p> 
+                       <p id="tel"></p>
+                    </div>
+                   <div class="datos">
+                       <p class="titudatos">E-mail: </p> 
+                       <p id="correo"></p>
+                    </div>
+                
+               </div>
+        <!-------- ----Fin Datos--- ------------> 
+              <div class="mt-4  aptitudes">
+                  <button  onclick="aptitudes()"  class="btnapt">Cambiar Aptitudes  </button> 
+  
+                 <p >Aptitudes</p>
+                <ul>
+                    <li id="l1">Pintura</li>  
+                     <li id="l2">Metalurgia</li>  
+                     <li id="l3">Maquinaria pesada</li>  
+                     <li id="l4">Conocimientos presupuestarios </li>  
+                     <li id="l5">Comunicación eficaz</li>  
+                 <!-- <li id="l6">Mampostería</li> --> 
+                </ul>  
+              </div>
+         <!-------- ----Fin Aptitudes- -------btnadi-----> 
+               <div class="mt-4  aptitudes">
+                   <button  onclick="cargainfoadi()"   class="btnadi">Cambiar Aptitudes  </button> 
+  
+                <p >Informacion adicional</p>
+                <ul>
+                    <li id="ll1" >Permiso de conducir A y vehículo propio </li>  
+                     <li id="ll2">Posibilidad de incorporación inmediata</li>  
+                 </ul>  
+              </div>
+              
+         <!-------- ----Fin Info adicional- ----cargaperfil-------->          
+           </div>
+
+          <div class="col-sm-12  col-lg-8 " id="tarje2">
+               <div class=""   >
+                    <button  onclick="cargaperfil()" class="btnperfil">Cambiar perfil</button>
+                     
+                <h1 class="mt-5 text-center">Perfil</h1> 
+                <p class="p-4" id="perfil"> Mi amplia experiencia en el campo de la ____________ supondría un refuerzo para su equipo actual. Además cuento con habilidades de gestión de equipo y en mis empleos anteriores siempre me he caracterizado por mi alta exigencia en el cumplimiento de los plazos previstos.   </p>
+               </div>
+
+               <div class="mt-3"  >
+                   
+                <h1 class="text-center">Experiencia </h1> 
+                        <button  onclick="names2()" id="boton2">Ingresar experiencia</button>
+                     
+                       <div class="wrapperexp mt-5">
+                          
+                        <div class="row text-center">
+                             <div class="col-sm-2 col-lg-2"  >
+                             <h3  > Duracion</h3>
+                            </div>
+                             <div class="col-sm-4 col-lg-4"  > 
+                             <h3  > Empresa </h3>
+                            </div>
+                             <div class="col-sm-6 col-lg-6"  > 
+                             <h3 > Puesto </h3>
+                            </div>
+
+                          </div>
+       
+                           
+                          <div class="row text-center ">
+                             <div class="col-sm-2 col-lg-2 border" id="año1"> </div>
+                             <div class="col-sm-4 col-lg-4 border" id="empresa1">  </div>
+                             <div class="col-sm-6 col-lg-6 border"  id="tarea1">  </div>
+
+                          </div>
+       
+                           
+                          <div class="row text-center " id="experiencia2">
+                             <div class="col-sm-2 col-lg-2 border" id="año2"> </div>
+                             <div class="col-sm-4 col-lg-4 border" id="empresa2">  </div>
+                             <div class="col-sm-6 col-lg-6 border"  id="tarea2">  </div>
+
+                          </div>     
+
+                        </div>
+            
+                       
+                 
+
+               </div>
+
+               <div class="mt-5"   >
+                 <h1 class="text-center">Estudios</h1> 
+                    <button  onclick="names3()" id="boton3">Ingresar estudios </button>
+
+                   <div class="row text-center mt-5">
+                       
+                  <div class="col-sm-3 col-lg-4 ">
+                      <div class="fechaestu">
+                        <p id="fecha1">  </p>-
+                           <p id="fecha2"> </p>
+                      </div>
+                  </div>
+
+                   <div class="col-sm-4 col-lg-4">
+                         <h3  class="mr-2 tituestu" >colegio: </h3> 
+                           <p id="cole">  </p> 
+                    </div>
+ 
+                    <div class="col-sm-5 col-lg-4">
+
+                      
+                          <h3 class="  mr-2 tituestu">Titulo: </h3>
+                          <p id="titu"  >  </p>
+                      
+                     </div>
+                   </div>
+               </div>
+
+          </div>
+         
+     </div> 
+     <!--------FIN --Datos--- ------------> 
+</div>  
+    
+     <script src="js/js.js"></script> 
+     <script src="js/bootstrap.min.js"></script> 
+    
+      <script>
+  
+    </script>
+  </body>
+</html>

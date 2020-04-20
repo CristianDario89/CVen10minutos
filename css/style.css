@@ -1,0 +1,216 @@
+*{
+    box-sizing: border-box;  
+       font-family: sans-serif;
+               letter-spacing:2px;
+   
+}
+/*-------keyframes----------------*/
+@-webkit-keyframes aparece{
+	0%{ opacity:1}
+    20%{ opacity:0}
+	50%{ opacity:1}
+	70%{ opacity:0}
+    80%{ opacity:1}
+	90%{ opacity:0}
+}
+/*-----TITULOS-----------*/
+h1{
+    font-weight: 700;
+    letter-spacing:3px;
+    text-shadow: 1px 1px 2px white;
+ /*  background: linear-gradient(to top right, rgba(0,0,0,0.6),rgba(0,0,0,0));
+  background-color: wheat  ;*/
+    padding: 5px;
+    box-shadow: 2px 2px 1px ,
+                -2px -2px 1px;
+}
+h5{
+    font-size: 35px; font-weight: 800;
+    text-shadow: 2px 2px 2px white;
+    color: black;
+    font-family: cursive;
+    
+}
+.tituestu{
+    transform: translateY(-5px);  
+}
+
+ h3{
+   font-size:18px;
+        box-shadow: 2px 2px 1px wheat,
+                -2px -2px 1px wheat;
+     padding: 5px;
+    display: inline-block;
+     color: antiquewhite;
+background: darkblue;}
+ 
+.titudatos{
+     font-weight: 600; font-size:20px;
+}  
+/*-----FIN TITULOS----------*/
+
+.ima1{
+    width: 100%;height: 200px; 
+    border-radius: 50%;
+    box-shadow: 4px 4px 2px;
+} 
+.ima2{
+    width: 100%;height: 200px; 
+    border-radius: 10%;
+    box-shadow: 4px 4px 2px white;
+    transform: scale(1)
+} 
+.datos{
+    display: flex;
+    line-height: 1.2;
+    justify-content: space-between;
+   font-size:18px;
+}
+  .colorparr{
+         
+    color: black;
+} 
+ 
+/*--------------------------------*-*/
+  #boton1{
+        padding: 10px;
+        opacity: 0;
+        background: black;
+        color: snow;
+     position: absolute;
+      right: 200px;
+      animation: aparece 10s;
+    }
+        #boton1:hover, #boton2:hover, #boton3:hover, .btnapt:hover, .btnadi:hover, .btnperfil:hover{
+         opacity: 1;
+    }
+     #boton2{
+        padding: 2px;
+         position: absolute;
+          transform: translate(1px, -40px);
+         opacity: 0;
+          background: black;
+        color: snow;
+           animation: aparece 10s;
+    } 
+    #boton3{
+        opacity: 0;
+         background: black;
+        color: snow;
+        position: absolute;
+       transform: translateY(-40px);
+      animation: aparece 10s;
+    } 
+.btnapt{
+position: absolute;
+     left: 150px;
+      opacity: 0;
+     background: black;
+        color: snow;
+      animation: aparece 10s;
+}
+.btnadi{
+position: absolute;
+     left: 150px;
+      opacity: 0;
+      animation: aparece 10s;
+}
+.btnperfil{
+    position: absolute;
+    top: 70px;
+     opacity: 0;
+      animation: aparece 10s;
+}
+/*---------------Nuevos para el JS-----------*/     
+   .redondo{
+            background: black;
+            height: 20px;
+            display: inline;
+            border-radius: 50%;
+        box-shadow: 2px 2px 2px red,
+           -2px -2px 2px red;
+           
+        }
+      
+        .deco{
+            border: 3px solid red;
+            padding: 11px;
+            border-radius: 20px;
+            background-color: antiquewhite;
+            box-shadow: 5px 5px 5px black,
+                 -5px -5px 5px black;
+        }
+           .deco2{
+                box-shadow: 1px 1px 1px,
+        -1px -1px 1px;
+    padding: 10px;
+           font-family: sans-serif;
+                   line-height: 0px;
+        } 
+
+    .deco3{
+               padding: 21px;
+            border-radius: 20px;
+             background: linear-gradient(to top right, rgba(0,0,0,0.6),rgba(0,0,0,0)); background-color: #ff0000; 
+        color: wheat;
+        font-family: cursive;
+         box-shadow: 4px 4px 2px black ;
+        }
+.decogold{
+    display:none;
+}
+/*------------Efectos JS--------------*/ 
+.fondito1{
+    background-image: url("../img/f1.jpg");
+    background-size: cover;
+    color: black;
+    font-weight: 600;
+   
+}  
+.fondito2{
+    background-image: url("../img/f2.jpg");
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+   
+}  
+.fondito3{
+    background-image: url("../img/f3.jpg");
+    background-size: cover;
+    color: white;
+    font-weight: 600;
+   
+}  
+.wrapperexp{
+    display: flex;
+    flex-direction: column;
+    line-height: 60px;
+    font-size: 18px;
+}
+.cuadrado{
+  box-shadow: 2px 2px black,
+      -2px -2px black;
+    padding: 10px;
+}
+.fechaestu{
+    display: flex;
+    justify-content: center;
+}
+/*---------------------*-*/
+.aptitudes{
+    box-shadow: 1px 1px 1px,
+        -1px -1px 1px;
+    padding: 10px;
+}
+.aptitudes p{
+    font-size: 22px;font-weight: 700;
+}
+/*--------------------------------------*/  
+@media screen and (max-width: 800px){ 
+    .titulo{
+       flex-direction: column;
+    } 
+}
+
+@media screen and (max-width: 600px){    }
+     
