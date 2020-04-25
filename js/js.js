@@ -328,22 +328,17 @@ function cargaperfil() {
                  cardd.setAttribute("src","../img/f3.jpg");
             
             
-               cardd.classList.add("ima1");
-              cardd.classList.remove("ima2");
-              fondos.classList.add("fondito3");
+                   fondos.classList.add("fondito3");
               
         }
             function tarjeteando6out(){
               var cardd = document.getElementById("imagen");
                var fondos = document.getElementById("fondo");
-                    cardd.removeAttribute("src","../img/f3.jpg");
+                  
                  cardd.setAttribute("src","../img/p1.jpg");
              
-               cardd.classList.remove("ima1");
-                  cardd.classList.add("ima2");
-                   fondos.classList.remove("fondito3");
-               cardd.classList.add("ima2"); 
-          
+                     fondos.classList.remove("fondito3");
+           
               
         }
 
@@ -361,15 +356,14 @@ function cargaperfil() {
             function tarjeteando7out(){
                  var fondos = document.getElementById("fondo");
                   fondos.classList.remove("fondito4");
-               
+             
         }
 
   var boton8 = document.getElementById("redondo8");
        boton8.addEventListener("mouseover", tarjeteando8,true);
             boton8.addEventListener("mouseout", tarjeteando8out,true);
-          
-        
-        function tarjeteando8(){
+     
+function tarjeteando8(){
                 var fondos = document.getElementById("fondo");
            fondos.classList.add("fondito5");
               
