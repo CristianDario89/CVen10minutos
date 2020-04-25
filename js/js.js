@@ -326,7 +326,7 @@ function cargaperfil() {
                var fondos = document.getElementById("fondo");
           
                  cardd.setAttribute("src","../img/f3.jpg");
-             
+            
             
                cardd.classList.add("ima1");
               cardd.classList.remove("ima2");
@@ -336,12 +336,46 @@ function cargaperfil() {
             function tarjeteando6out(){
               var cardd = document.getElementById("imagen");
                var fondos = document.getElementById("fondo");
-                
+                    cardd.removeAttribute("src","../img/f3.jpg");
                  cardd.setAttribute("src","../img/p1.jpg");
              
                cardd.classList.remove("ima1");
+                  cardd.classList.add("ima2");
                    fondos.classList.remove("fondito3");
                cardd.classList.add("ima2"); 
           
               
+        }
+
+
+  var boton7 = document.getElementById("redondo7");
+       boton7.addEventListener("mouseover", tarjeteando7,true);
+            boton7.addEventListener("mouseout", tarjeteando7out,true);
+          
+        
+        function tarjeteando7(){
+                var fondos = document.getElementById("fondo");
+           fondos.classList.add("fondito4");
+              
+        }
+            function tarjeteando7out(){
+                 var fondos = document.getElementById("fondo");
+                  fondos.classList.remove("fondito4");
+               
+        }
+
+  var boton8 = document.getElementById("redondo8");
+       boton8.addEventListener("mouseover", tarjeteando8,true);
+            boton8.addEventListener("mouseout", tarjeteando8out,true);
+          
+        
+        function tarjeteando8(){
+                var fondos = document.getElementById("fondo");
+           fondos.classList.add("fondito5");
+              
+        }
+            function tarjeteando8out(){
+                 var fondos = document.getElementById("fondo");
+                  fondos.classList.remove("fondito5");
+               
         }
